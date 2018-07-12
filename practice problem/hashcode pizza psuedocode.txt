@@ -1,0 +1,12 @@
+- Read The document text into an array
+	* where each line is a row (i.e an index containing an array) and each character M and T will be passed into the array as 1 and O respectively
+- Pick M and T as long as the minimum is nit reached for both
+
+- Check if the mximum Total number of cells have not beign reach
+
+- To check for direction of cut (i.e making decision on direction)
+	-Check highest two multiples that will give maximum row and column(i.e for max cell = 6: 3R x 2C)
+	- First one step vertically, then one step horizontally
+	- To terminate cut for a slice and move to the next slice cut: * When the minimum ingredient of M and T have been reached
+	- Save the last position of cut in each row in a key-value pair where key is the index of each row.
+		*the saved row is to be used as start position for a new cut that passess through that row 
